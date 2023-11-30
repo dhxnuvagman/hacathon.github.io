@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chemical oxygen demand</title>
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+</style>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="container">
+  <nav id="head">
+    <h1>Chemical Oxygen Demand</h1>
+  </nav>
+  <div class="bodyc">
+    Observation And Calculation<br><br>
+    <p>Weight of FAS crystal taken=<span id="fv">0.00</span>g</p>
+    <br>
+    <p>Weight of FAS crystal taken N1<br><span id="for">=weight of FAS*4/EQ.wt of FAS</p>
+    <br><p id="for">=(<span id="fvd">3.5196</span>x 4)/392</p>
+     <br><p id="for"><span id="wr">0.000</span>g</p></span><br><br>
+     <p>Burette: <u ><span id="bt">0.000</span></u>N std.FAS Solution</p><br>
+     <p><i>Conical Flask</i>: 25ml of waste water sample + 10ml of K<sub>2</sub>Cr<sub>2</sub>O<sub>7</sub> Solution + One test tube of(1:1)dil H<sub>2</sub>So<sub>4</sub></p><br>
+     <p>Indicator : Ferroin</p>
+     <p>End point: Bluish green to reddish brown</p>
+     <br>
+     <table>
+  <tr>
+    <td>Trial No</td>
+    <td>I</td>
+    <td>II</td>
+    <td>III</td>
+  </tr>
+  <tr>
+    <td>Final burette reading</td>
+    <td contenteditable="true" id="f1"> 00 </td>
+    <td contenteditable="true" id="f2"> 00 </td>
+    <td  id="f3" contenteditable="true" >00</td>
+  </tr>
+  <tr>
+    <td>Initial burette reading</td>
+    <td contenteditable="true" id="i1"> 00 </td>
+    <td contenteditable="true" id="i2"> 00 </td>
+    <td id="i3" contenteditable="true"> 00 </td>
+  </tr>
+  <tr onclick="calc()">
+    <td>Volume of FAS consumed</td>
+    <td  id="fr1">00</td>
+    <td  id="fr2">00</td>
+    <td id="fr3">00</td>
+  </tr>
+</table><br>
+     <p>blank titer value=<u id="btv"contenteditable="true" >00.0</u>ml</p>
+     <p>Volume of Std FAS consumed by the water sample,</p>
+     <p id="for">v1=(Blank Titre value-Actual Titre value)</p><br>
+     <p id="for"><span id="btv1">00.0</span>-<span id="atv">0.0</span>=<u id="vsf1">0.0</u></p><br>
+     <p id="for">=<spam id="vsf">0.0</spam>ml</p><br>
+     <p>Strength Of Waste water sample (N<sub>2</sub>)</p>
+     <p id="for">=(v<sub>1</sub>XN<sub>1</sub>)/V<sub>2</sub></p><br>
+     <p id="for">=(<span id="v1">0.0</span>X<span id="n1">0.0</span>)/25</p><br>
+     <p id="for">=<span id="n2"></span>N</p><br>
+     <p>COD of waste water Sample=<br></p><p id="for">N<sub>2</sub>X Equivalent weight of oxygen</p><br>
+     <p id="for"><span id="n3">0.0</span>x  8</p><br>
+     <p id="for"><u id="n4">=0.0872</u>g/liter</p><br>
+     <p id="for">=<span id="n5"></span>x 1000</p><br>
+     <p id="for"><u id="fa">=87.2</u>mg/liter</p><br>
+     <u>Result:</u>The Chemical Oxygen Demand(COD) of the given sample of water is<u>0.0</u id="ass">mg/dm<sup>3</sup>
+  </div></div>
+  <p id="d">-Dhanush A(CSBS)</p>
+<script src="script.js"></script>
+</body>
+
+</html>
